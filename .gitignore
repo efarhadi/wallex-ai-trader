@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.secret
+*.pem
+*.key
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Databases & local state
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+*.wal
+*.shm
+wallex_agent.db
+data/*.db
+data/*.sqlite3
+
+# Runtime logs
+logs/*.log
+!logs/wallex_agent.sample.log
+
+# AI planning, agent configs, and scratch tickets
+.scratch/
+.agents/
+.claude/
+AGENTS.md
+plan.md
+skills-lock.json
+README_FA.md
+
+# Hackathon / internal research docs and media
+docs/
