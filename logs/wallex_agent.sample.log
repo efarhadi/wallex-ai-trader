@@ -1,0 +1,14 @@
+2026-11-16 10:00:00 [INFO] wallex_agent.harness: Initializing Wallex Opportunity Agent in SHADOW mode (initial_cash=5,000,000 TMN)
+2026-11-16 10:00:01 [INFO] wallex_agent.adapter: Connected to Wallex Spot API adapter (active_markets=345, latency=124ms)
+2026-11-16 10:00:01 [INFO] wallex_agent.universe: Built MarketUniverse with 345 spot pairs. Denylist active: 20 symbols excluded.
+2026-11-16 10:00:02 [INFO] wallex_agent.preflight: Running startup preflight safety checks...
+2026-11-16 10:00:02 [INFO] wallex_agent.preflight: [CHECK_PASS] Balance verification: 5,000,000 TMN verified.
+2026-11-16 10:00:02 [INFO] wallex_agent.preflight: [CHECK_PASS] Fail-closed denylist verified.
+2026-11-16 10:00:02 [INFO] wallex_agent.preflight: [CHECK_PASS] Watchdog risk engine limits armed.
+2026-11-16 10:00:03 [INFO] wallex_agent.harness: Preflight validation successful. Starting cycle loop (interval=10s).
+2026-11-16 10:00:13 [INFO] wallex_agent.scanner: Scan cycle 1 completed: 18 liquid candidates evaluated, top setup: BTCTMN (score=0.88).
+2026-11-16 10:00:13 [INFO] wallex_agent.strategies: Strategy trend_filtered_pullback evaluated for BTCTMN -> BUY (confidence=0.85).
+2026-11-16 10:00:13 [INFO] wallex_agent.risk_engine: Risk check APPROVED: allocation=1,000,000 TMN (20.0%), stop=1.0%, tp=2.0%.
+2026-11-16 10:00:14 [INFO] wallex_agent.order_executor: [SHADOW] Simulated fill order ord-mock-01 for BTCTMN qty=0.00022200 at price=4,504,504,500 TMN.
+2026-11-16 10:00:14 [INFO] wallex_agent.telemetry: Logged position pos-mock-01 and trade telemetry into SQLite store.
+2026-11-16 10:00:24 [INFO] wallex_agent.watchdog: Watchdog cycle check: 1 open position active, unrealized_pnl=+12,400 TMN.
